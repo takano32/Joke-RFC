@@ -4,11 +4,16 @@
 # vim: set noet sts=4 sw=4 ts=4 fdm=marker :
 #
 
+urls = []
 
-module IETF
+DATA.read.each_line do |line|
+	urls << "http://tools.ietf.org/rfc/rfc#{line.chomp}.txt"
+	urls << "http://tools.ietf.org/pdf/rfc#{line.chomp}.pdf"
 end
 
-
+urls.each do |url|
+	%x!wget "#{url}"!
+end
 
 __END__
 748
@@ -57,8 +62,3 @@ __END__
 6217
 6592
 6593
-
-
-
-
-
