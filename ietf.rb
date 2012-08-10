@@ -1,7 +1,12 @@
-#!/usr/bin/env ruby
-# author: takano32 <tak@no32 at tk>
+#! /usr/bin/env ruby
+# IETF
+# author: takano32 <tak@no32 dot tk>
+# vim: set noet sts=4 sw=4 ts=4 fdm=marker :
 #
 
+
+module IETF
+end
 
 
 
